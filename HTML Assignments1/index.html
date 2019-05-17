@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <fieldset id="registerDetails">
+            <legend>Register Form</legend>
+            <dl>
+                <dt>Name</dt>
+                <dd>
+                    <input type="text" id="txtName">
+                </dd>
+                <dt>Email</dt>
+                <dd>
+                    <input type="email" id="txtEmail">
+                </dd>
+                <dt>Password</dt>
+                <dd>
+                    <input type="password" id="txtPwd">
+                </dd>
+                <dt>Gender</dt>
+                <dd>
+                    <input type="radio" name="check" value="Male" id="genMal">Male
+                    <input type="radio" name="check" value="Female" id="genFe">Female
+                </dd>
+                <dt>Your Course:</dt>
+                    <dd>
+                        <select id="lstCourse">
+                            <option value="BCA">BCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </dd>
+                    <dt>Comments</dt>
+                    <dd>
+                        <textarea id="txtComnt" cols="20" rows="2"></textarea>
+                    </dd>
+                
+            </dl>
+            <input type="button" value="Submit" onclick="Register()">
+            <input type="button" value="Reset" onclick="Reset()">
+        </fieldset>
+        <fieldset id="showDetails" style="display: none">
+            <table border="2" width="400">
+                <tr>
+                    <td>Name</td>
+                    <td id="lblName"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="lblEmail"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td id="lblPwd"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="lblGen"></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td id="lblCourse"></td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <td id="lblCom"></td>
+                </tr>
+            </table><br>
+            <a href="index1.html">Register New</a>
+        </fieldset>
+    </form>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
